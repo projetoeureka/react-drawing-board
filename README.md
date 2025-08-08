@@ -70,7 +70,7 @@ const Demo: React.FC = () => {
 
 ## How to run on local SGLearner
 
-1) Cloe this repo anywhere in your computer
+1) Clone this repo anywhere in your computer
 ```bash
 git clone https://github.com/projetoeureka/react-drawing-board.git
 ```
@@ -97,7 +97,7 @@ npm run build && yalc push
 
 ```bash
 # Only needed the first time you link the package
-yalc add react-drawing-board
+cd web && yalc add react-drawing-board && cd ..
 
 # After each change in this library:
 # - stop SGLearner if it is running and then run:

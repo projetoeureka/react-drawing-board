@@ -1,0 +1,13 @@
+src/
+node_modules/
+.git/
+.gitignore
+.umirc.ts
+.fatherrc.js
+tsconfig.json
+yarn.lock
+package-lock.json
+*.log
+.DS_Store
+preview.png
+README.md

@@ -67,3 +67,39 @@ const Demo: React.FC = () => {
 | toolbarPlacement(optional) | the position of toolbar | 'top' or 'left' or 'right' | 'top' |
 | viewMatrix(optional) | control the current perspective  | undefined |
 | onViewMatrixChange(optional) | (viewMatrix: ViewMatrix) => void  | undefined |
+
+## How to run on local SGLearner
+
+1) Clone this repo anywhere in your computer
+```bash
+git clone https://github.com/projetoeureka/react-drawing-board.git
+```
+
+2) Install dependencies and publish locally via yalc
+
+```bash
+npm install
+# If you don't have yalc installed globally yet
+npm install -g yalc
+
+# Publish this library to your local yalc store
+yalc publish
+```
+
+3) Apply changes and push updates to yalc
+
+```bash
+# Make your modifications under the src/ folder of this repo
+npm run build && yalc push
+```
+
+4) In SGLearner, link and run
+
+```bash
+# Only needed the first time you link the package
+cd web && yalc add react-drawing-board && cd ..
+
+# After each change in this library:
+# - stop SGLearner if it is running and then run:
+yarn && make run-web
+```

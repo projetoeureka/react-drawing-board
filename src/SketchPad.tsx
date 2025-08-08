@@ -575,13 +575,10 @@ const SketchPad: React.ForwardRefRenderFunction<any, SketchPadProps> = (props, r
   const isControlled = !!operations;
   const scale = extract_scale_from_matrix(viewMatrix);
   const reducer = useCallback(operationListReducer(isControlled, onChange), []);
-  const [operationListState, operationListDispatch] = useReducer<Reducer<OperationListState, any>>(
-    reducer,
-    {
-      queue: [],
-      reduced: [],
-    },
-  );
+  const [operationListState, operationListDispatch] = useReducer<OperationListState, any>(reducer, {
+    queue: [],
+    reduced: [],
+  });
   if (isControlled) {
     useEffect(() => {
       operationListDispatch({

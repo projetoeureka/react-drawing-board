@@ -1,5 +1,5 @@
-// Consumers of lib/ (SGLearner's webpack) have no less-loader, so style imports must point at the
-// .css files that scripts/build-styles.js emits next to each module.
+// Quem consome o lib/ empacota sem loader de less, então cada import de estilo precisa apontar
+// para o .css compilado ao lado do módulo.
 module.exports = function lessToCss() {
   return {
     name: 'less-to-css',

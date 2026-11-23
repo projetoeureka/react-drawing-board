@@ -2,7 +2,8 @@ src/
 node_modules/
 .git/
 .gitignore
-.fatherrc.js
+.fatherrc.ts
+scripts/
 tsconfig.json
 yarn.lock
 package-lock.json

@@ -12,7 +12,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "father build"
+    "build": "father build && node scripts/build-styles.js"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -26,9 +26,11 @@
     "react-dom": ">=16.5.2"
   },
   "devDependencies": {
-    "@types/vfile-message": "^2.0.0",
+    "@types/react": "18.0.x",
     "@types/uuid": "^3.4.6",
-    "father": "^2.29.1",
+    "@types/vfile-message": "^2.0.0",
+    "father": "^4.6.44",
+    "less": "^4.9.1",
     "react": ">=16.5.2",
     "react-dom": ">=16.5.2"
   },

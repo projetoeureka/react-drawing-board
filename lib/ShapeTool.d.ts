@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import Tool, { ToolOption, ShapeType } from './enums/Tool';
 import './ShapeTool.less';
 export interface Position {
@@ -6,7 +7,7 @@ export interface Position {
     w: number;
     h: number;
 }
-export declare type Shape = {
+export type Shape = {
     type: ShapeType;
     color: string;
     size: number;

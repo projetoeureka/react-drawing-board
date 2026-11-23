@@ -1,4 +1,4 @@
-export declare type localeType = 'en-US' | 'zh-CN' | 'tr-TR' | 'en' | 'zh' | 'tr' | 'pt-BR';
+export type localeType = 'en-US' | 'zh-CN' | 'tr-TR' | 'en' | 'zh' | 'tr' | 'pt-BR';
 declare const _default: {
     messages: {
         "en-US": {

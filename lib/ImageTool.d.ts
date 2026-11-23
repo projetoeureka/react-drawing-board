@@ -1,8 +1,8 @@
 import Tool, { Position } from './enums/Tool';
-export declare type Image = {
+export type Image = {
     imageData: string;
 };
-export declare type Background = {
+export type Background = {
     imageData: string;
 };
 export declare const clearBackgroundPostionCache: () => void;

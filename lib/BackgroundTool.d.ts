@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { Position } from './enums/Tool';
 export declare const useBackgroundDropdown: (config: {
     selectBackgroundImage: () => void;

@@ -1,5 +1,5 @@
 /// <reference types="react" />
-declare type Props = {
+type Props = {
     overlay: JSX.Element;
     children: JSX.Element | Array<JSX.Element>;
     forceVisible?: boolean;

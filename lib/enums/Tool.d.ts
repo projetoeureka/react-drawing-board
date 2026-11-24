@@ -50,7 +50,7 @@ export declare const defaultToolOption: {
         id: string;
     };
 };
-export declare type ToolOption = {
+export type ToolOption = {
     strokeSize: number;
     strokeColor: string;
     shapeType: ShapeType;

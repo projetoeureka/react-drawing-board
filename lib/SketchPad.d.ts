@@ -16,12 +16,12 @@ export interface SketchPadProps {
     viewMatrix: ViewMatrix;
     onViewMatrixChange: (viewMatrix: ViewMatrix) => void;
 }
-export declare type onChangeCallback = (newOperaton: Operation, operationsAfter: Operation[]) => void;
-export declare type onSaveCallback = (image: {
+export type onChangeCallback = (newOperaton: Operation, operationsAfter: Operation[]) => void;
+export type onSaveCallback = (image: {
     canvas: HTMLCanvasElement;
     dataUrl: string;
 }) => void;
-export declare type SketchPadRef = {
+export type SketchPadRef = {
     selectImage: (image: string) => void;
     selectBackgroundImage: (image: string) => void;
     removeBackgroundImage: () => void;
@@ -31,26 +31,26 @@ export declare type SketchPadRef = {
     save: (handleSave?: onSaveCallback) => void;
     getCanvas: () => HTMLCanvasElement;
 };
-export declare type Remove = {
+export type Remove = {
     operationId: string;
 };
-export declare type Operation = (Stroke | Shape | Text | Image | Background | Update | Remove) & {
+export type Operation = (Stroke | Shape | Text | Image | Background | Update | Remove) & {
     id: string;
     userId: string;
     timestamp: number;
     pos?: Position;
     tool: Tool;
 };
-export declare type Update = {
+export type Update = {
     operationId: string;
     data: Partial<(Stroke | Shape | Text | Image) & {
         pos: Position;
     }>;
 };
-export declare type OperationListState = {
+export type OperationListState = {
     queue: Operation[];
     reduced: Operation[];
 };
-export declare type ViewMatrix = [number, number, number, number, number, number];
+export type ViewMatrix = [number, number, number, number, number, number];
 declare const _default: React.ForwardRefExoticComponent<SketchPadProps & React.RefAttributes<any>>;
 export default _default;

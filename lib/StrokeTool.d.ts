@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import Tool, { ToolOption } from './enums/Tool';
 import './StrokeTool.less';
 interface Point {
